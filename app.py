@@ -10,7 +10,7 @@ import pickle
 # ==============================
 @st.cache_resource
 def load_model():
-    with open('mobile_price_model.pkl', 'rb') as file:
+    with open('Best_ML.pkl', 'rb') as file:
         model = pickle.load(file)
     return model
 
@@ -109,10 +109,10 @@ input_data = pd.DataFrame([[
 if st.button('🔍 Predict Price Range'):
     prediction = model.predict(input_data)[0]
     label_map = {
-        0: '💸 Low Cost',
-        1: '💰 Medium Cost',
-        2: '💎 High Cost',
-        3: '🔥 Very High Cost'
+        0: '💸 Low Cost : 10-25k',
+        1: '💰 Medium Cost : 25-50k',
+        2: '💎 High Cost : 50- 100k ',
+        3: '🔥 Very High Cost : 100K + '
     }
 
     # Display Result
