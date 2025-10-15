@@ -130,4 +130,4 @@ if st.button('🔍 Predict Price Range'):
 # 🧾 Footer
 # ==============================
 st.markdown("---")
-st.markdown("Made with ❤️ by **Heisenberg** using Streamlit and ML.")
+st.markdown("Made with ❤️ by **A J 5 2 4** using Streamlit and ML.")
